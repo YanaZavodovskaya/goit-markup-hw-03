@@ -1,0 +1,381 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1,h2,h3,p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,ol{
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    display: block;
+}
+
+body {   
+    margin: 0; 
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    background-color: #ffffff;
+}
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-text-color: #2196F3;
+    --accent-bg-color: #2F303A;    
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.container {    
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid tomato;
+}
+
+/* header */
+/* logo */
+.top-header {
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.logo {
+    font-family: Raleway, sans-serif;    
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+
+    margin-right: 93px;
+}
+
+.logo-forepart {
+    color: var(--accent-text-color);
+}
+
+.top-header .logo {
+    color: #000000;    
+}
+
+.footer .logo {
+    color: #ffffff;
+    display: inline-block;
+    padding-top: 60px;
+    margin-bottom: 20px;
+}
+
+/* site-nav */
+.site-nav {
+    display: flex;
+}
+
+.site-nav-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.site-nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--title-text-color);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--accent-text-color);
+}
+
+.nav-link.current {
+    color: var(--accent-text-color);
+}
+
+/* contacts */
+
+.container-contacts-list {
+    margin-left: auto;
+}
+
+.contacts-list {
+    display: flex;
+}
+
+.contact-mail {
+    margin-right: 50px;
+}
+
+.contact-mail,
+.contact-tel {
+    font-style: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: inherit;
+}
+.contact-tel:hover,
+.contact-tel:focus {
+    color: var(--accent-text-color);
+}
+
+.contact-mail:hover,
+.contact-mail:focus {
+    color: var(--accent-text-color);
+}
+
+/* footer */
+.footer {
+    background-color: var(--accent-bg-color);
+}
+
+.studio-address {
+    font-style: inherit;
+    padding-bottom: 60px;
+}
+
+.footer-contacts-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer-contact-address,
+.footer-contact-mail,
+.footer-contact-tel {
+    font-style: inherit;
+    font-size: 14px;
+    line-height: 1.7;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-contact-address {
+    color: #ffffff;
+}
+
+.footer-contact-mail:hover,
+.footer-contact-mail:focus {
+    color: #ffffff;
+}
+
+.footer-contact-tel:hover,
+.footer-contact-tel:focus {
+    color: #ffffff;
+}
+
+/* main studio*/
+/* hero */
+.hero-section {
+    background-color: var(--accent-bg-color);
+}
+
+.hero-title {    
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    margin-bottom: 30px; 
+}
+
+.hero-btn {
+    cursor: pointer;    
+    background-color: var(--accent-text-color);
+    font-family: inherit;
+    font-style: inherit;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+
+    display: inline-block;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 32px;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: #188CE8;
+}
+
+/* section title h3 */
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--title-text-color);
+
+    margin-bottom: 50px;
+}
+
+/* quolities */
+.quolities-section {
+    
+}
+
+.quolities-list{ 
+    display: flex;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.quolities-item:not(:last-child) {
+    margin-right: 30px;
+}
+.quolities-title {    
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+
+    margin-bottom: 10px;
+}
+
+.quolities-desc {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* work */
+.work-section {
+}
+
+.work-section-list {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 94px;
+}
+.work-section .section-title {
+}
+
+/* our-team */
+.our-team-section {
+    background-color: #F5F4FA;
+    
+}
+
+.our-team-list {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 94px;
+}
+
+.our-team-section .container {
+}
+
+.our-team-section .section-title {
+    padding-top: 94px;
+}
+
+.team-card-img {
+    margin-bottom: 30px;
+}
+
+.team-card-title {    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--title-text-color);
+
+    margin-bottom: 10px;
+}
+.team-card-text {    
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+/* portfolio */
+.portfolio-title {
+    display: none;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    color: var(--title-text-color);
+}
+
+.portfolio-filters-list {
+}
+
+.portfolio-filter-btn {
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;    
+    text-align: center;
+    background: #F5F4FA;
+    color: var(--title-text-color)
+}
+
+.portfolio-filter-btn:hover,
+.portfolio-filter-btn:focus {
+    background-color: var(--accent-text-color);
+    color: #ffffff;
+}
+
+.portfolio-prj-list {
+}
+
+.portfolio-prj-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.portfolio-prj-card {
+    margin-bottom: 20px;
+}
+
+.portfolio-prj-card-title {    
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
+
+}
+
+.portfolio-prj-card-text {
+    font-size: 16px;
+    line-height: 1.9;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+
