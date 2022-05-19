@@ -1,6 +1,7 @@
 html {
     box-sizing: border-box;
 }
+
 *,
 *::before,
 *::after {
@@ -49,7 +50,7 @@ body {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid tomato;
+    /* outline: 1.1px solid tomato; */
 }
 
 /* header */
@@ -59,6 +60,7 @@ body {
     align-items: center;
     padding-top: 24px;
     padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .logo {
@@ -194,6 +196,11 @@ body {
 /* hero */
 .hero-section {
     background-color: var(--accent-bg-color);
+    justify-content: center;
+    padding-bottom: 200px;
+    padding-top: 200px;
+}
+.hero-section .container {
 }
 
 .hero-title {    
@@ -205,7 +212,10 @@ body {
     text-transform: uppercase;
     color: #ffffff;
 
-    margin-bottom: 30px; 
+    max-width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;        
 }
 
 .hero-btn {
@@ -218,10 +228,15 @@ body {
     letter-spacing: 0.06em;
     color: #ffffff;
 
-    display: inline-block;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    display: block;
+    border: 1px solid var(--accent-text-color);
+    box-shadow: 0px 4px 4px rgba(0 0 0 0.15);
     border-radius: 4px;
     padding: 10px 32px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 200px;
+    min-height: 50px;
 }
 
 .hero-btn:hover,
@@ -283,8 +298,7 @@ body {
 
 /* our-team */
 .our-team-section {
-    background-color: #F5F4FA;
-    
+    background-color: #F5F4FA;    
 }
 
 .our-team-list {
@@ -313,6 +327,7 @@ body {
 
     margin-bottom: 10px;
 }
+
 .team-card-text {    
     font-size: 16px;
     line-height: 1.2;
@@ -330,6 +345,14 @@ body {
 }
 
 .portfolio-filters-list {
+    display: flex;
+    justify-content: center;
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+
+.portfolio-filter-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .portfolio-filter-btn {
@@ -340,7 +363,12 @@ body {
     line-height: 1.6;    
     text-align: center;
     background: #F5F4FA;
-    color: var(--title-text-color)
+    color: var(--title-text-color);
+
+    border: 1px solid transparent;
+    border-radius: 4px;
+
+    padding: 6px 22px;
 }
 
 .portfolio-filter-btn:hover,
@@ -350,6 +378,16 @@ body {
 }
 
 .portfolio-prj-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    margin-right: -15px;
+
+    padding-bottom: 94px;
+}
+
+.portfolio-prj-item {
+    margin: 15px;
 }
 
 .portfolio-prj-link {
@@ -358,7 +396,6 @@ body {
 }
 
 .portfolio-prj-card {
-    margin-bottom: 20px;
 }
 
 .portfolio-prj-card-title {    
@@ -368,6 +405,7 @@ body {
     letter-spacing: 0.06em;
     color: var(--title-text-color);
 
+    margin-bottom: 4px;
 }
 
 .portfolio-prj-card-text {
@@ -375,6 +413,17 @@ body {
     line-height: 1.9;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.portfolio-prj-card-container {
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-top: 30px;
 }
 
 
