@@ -160,11 +160,12 @@ body {
 /* footer */
 .footer {
     background-color: var(--accent-bg-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer .container {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    
 }
 
 .studio-address {
@@ -356,9 +357,6 @@ body {
     padding-bottom: 94px;
 }
 
-.portfolio-filters.container {
-    margin-bottom: 50px;
-}
 
 .portfolio-title {
     display: none;
@@ -371,10 +369,11 @@ body {
 .portfolio-filters-list {
     display: flex;
     justify-content: center;    
+    margin-bottom: 50px;
 }
 
 .portfolio-filter-item:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 8px;
 }
 
 .portfolio-filter-btn {
@@ -443,7 +442,7 @@ body {
     padding-left: 24px;
     padding-right: 24px;
     padding-bottom: 20px;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 
